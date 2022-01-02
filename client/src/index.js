@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import AppRouter from "AppRouter";
+import App from "App";
 import { BrowserRouter } from "react-router-dom";
 import "index.css";
 
@@ -13,7 +13,7 @@ ReactDOM.render(
 	<Provider store={store}>
 		<BrowserRouter>
 			<PersistGate loading={null} persistor={persistor}>
-				<AppRouter />
+				<App />
 			</PersistGate>
 		</BrowserRouter>
 	</Provider>,
